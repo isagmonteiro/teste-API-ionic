@@ -5,6 +5,7 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import {defineCustomElements } from '@ionic/pwa-elements/loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 defineCustomElements(window);
 if (environment.production) {
