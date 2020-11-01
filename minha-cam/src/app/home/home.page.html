@@ -1,4 +1,5 @@
-<ion-header [translucent]="true">
+<ion-content [fullscreen]="true">
+<ion-header >
   <ion-toolbar>
     <ion-title>
       Câmera
@@ -6,9 +7,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <img [src]="file">
-  
   <ion-button (click)="tirarfoto()"><ion-icon name="camera"></ion-icon></ion-button>
-
+  <div>
+    <img style='display:block; width:100px;height:100px;' id='base64image'                 
+    src='data:image/jpeg;base64, ' imgsrc />
+  </div>
 </ion-content>

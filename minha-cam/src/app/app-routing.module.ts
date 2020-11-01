@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'prediction',
+    loadChildren: () => import('./prediction/prediction.module').then( m => m.PredictionPageModule)
+  },
 ];
 
 @NgModule({
